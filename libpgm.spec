@@ -2,7 +2,7 @@ Summary:	PGM reliable multicast network protocol library
 Summary(pl.UTF-8):	Biblioteka wiarygodnego multicastowego protokołu sieciowego PGM
 Name:		libpgm
 Version:	5.2.122
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries
 #Source0Download: http://code.google.com/p/openpgm/downloads/list
