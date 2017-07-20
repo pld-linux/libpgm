@@ -5,10 +5,11 @@ Version:	5.2.122
 Release:	2
 License:	LGPL v2.1+
 Group:		Libraries
-#Source0Download: http://code.google.com/p/openpgm/downloads/list
+#Source0Download: https://github.com/steve-o/openpgm/releases
+# below is old download URL, no longer available
 Source0:	http://openpgm.googlecode.com/files/%{name}-%{version}.tar.bz2
 # Source0-md5:	06d6e16bc9064379caf0f8fe979dc785
-URL:		http://code.google.com/p/openpgm/
+URL:		https://github.com/steve-o/openpgm
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
