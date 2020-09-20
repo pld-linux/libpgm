@@ -1,0 +1,11 @@
+--- openpgm-release-5-3-128/openpgm/pgm/include/pgm/socket.h.orig	2020-08-31 05:14:09.000000000 +0200
++++ openpgm-release-5-3-128/openpgm/pgm/include/pgm/socket.h	2020-09-20 11:15:07.812709126 +0200
+@@ -202,7 +202,7 @@
+ int pgm_epoll_ctl (pgm_sock_t*const, const int, const int, const int);
+ #endif
+ 
+-static
++static inline
+ const char*
+ pgm_family_string (
+ 	const int       family
