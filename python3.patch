@@ -1,0 +1,11 @@
+--- openpgm-release-5-3-128/openpgm/pgm/configure.ac	2020-08-31 05:14:09.000000000 +0200
++++ openpgm-release-5-3-128/openpgm/pgm/configure.ac	2023-12-02 17:31:04.715055041 +0100
+@@ -30,7 +30,7 @@
+ AM_PROG_AS
+ AC_PROG_LIBTOOL
+ AC_PATH_PROG(PERL, perl)
+-AC_PATH_PROG(PYTHON, python)
++AC_PATH_PROG(PYTHON, python3)
+ 
+ # nb: earliest verifiable version is 2.2.
+ m4_ifdef([LT_PREREQ], [LT_PREREQ([2.2])])
