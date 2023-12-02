@@ -3,19 +3,20 @@ Summary(pl.UTF-8):	Biblioteka wiarygodnego multicastowego protokołu sieciowego 
 Name:		libpgm
 Version:	5.3.128
 %define	tagver	%(echo %{version} | tr . -)
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries
 #Source0Download: https://github.com/steve-o/openpgm/releases
 Source0:	https://github.com/steve-o/openpgm/archive/release-%{tagver}/openpgm-%{version}.tar.gz
 # Source0-md5:	134eb021a8e4618ef87d54456282d186
 Patch0:		%{name}-inline.patch
+Patch1:		python3.patch
 URL:		https://github.com/steve-o/openpgm
 BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake >= 1:1.10
 BuildRequires:	libtool >= 2:2.2
 BuildRequires:	perl-base
-BuildRequires:	python
+BuildRequires:	python3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -53,6 +54,7 @@ Statyczna biblioteka OpenPGM.
 %prep
 %setup -q -n openpgm-release-%{tagver}
 %patch0 -p1
+%patch1 -p1
 
 %{__mv} openpgm/pgm/openpgm-{5.2,5.3}.pc.in
 
